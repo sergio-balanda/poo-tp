@@ -29,7 +29,7 @@
                     <th>rol</th>
                     <th>nombre</th>
                     <th>num_doc</th>
-                    <th>Modificar</th>
+                    <th>Operaciones</th>
                 </tr>
                 </thead>
                 <?php foreach($datos as $tr){ ?>
@@ -39,6 +39,8 @@
                     <td><?php echo $tr['num_doc'];?></td>
                     <td>
                         <a href="modificar.php?id=<?php echo $tr["idUsuario"]?>" class="btn btn-info">Modificar</a>
+                        
+                        <a href="registrar.php?id=<?php echo $tr["idUsuario"]?>&funcion=eliminar" class="btn btn-danger">Eliminar</a> 
                     </td>
                 </tr>
                 <?php } ?>
@@ -46,7 +48,7 @@
         </div>
     </div>
 </div>
-<a href="insertar.php" class="bnt btn-link">insertar</a>
+<a href="insertar.php" class="btn btn-default">insertar</a>
 
 </body>
 </html>

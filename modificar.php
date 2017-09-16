@@ -26,7 +26,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-           <form action="" method="post">
+           <form action="registrar.php" method="post">
             <table class="table">
             
             <?php foreach($user as $users){ ?>
@@ -54,7 +54,7 @@
                 
                 <tr class="warning">
                     <td>tipo_doc</td>
-                    <td><input type="text" name="tipo_doc"></td>
+                    <td><input type="text" name="tipo_doc" value="<?php echo $users['tipo_doc']; ?>"></td>
                 </tr>
                 
                 <tr class="danger">
@@ -66,10 +66,10 @@
                     <div class="form-group">
                       <label for="sel1">Rol</label>
                       <select class="form-control" id="sel1" name="rol">
-                        <option value="0">chofer</option>
-                        <option value="1">admin</option>
-                        <option value="2">supervisor</option>
-                        <option value="3">mecanico</option>
+                        <option value="chofer">chofer</option>
+                        <option value="admin'">admin</option>
+                        <option value="supervisor">supervisor</option>
+                        <option value="mecanico">mecanico</option>
                       </select>
                       </td>
                 </div>
@@ -84,6 +84,10 @@
                <?php } ?>
                
             </table>
+            
+            <input type="hidden" name="funcion" value="modificar">
+            <input type="hidden" name="cod" value="<?php echo $cod; ?>">
+            
             </form>
     </div>
 </div>

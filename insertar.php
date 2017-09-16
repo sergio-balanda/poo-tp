@@ -45,10 +45,10 @@
                     <div class="form-group">
                       <label for="sel1">Rol</label>
                       <select class="form-control" id="sel1" name="rol">
-                        <option value="0">chofer</option>
-                        <option value="1">admin</option>
-                        <option value="2">supervisor</option>
-                        <option value="3">mecanico</option>
+                        <option value="chofer">chofer</option>
+                        <option value="admin">admin</option>
+                        <option value="supervisor">supervisor</option>
+                        <option value="mecanico">mecanico</option>
                       </select>
                       </td>
                 </div>
@@ -60,6 +60,8 @@
                    </td>
                </tr>
             </table>
+            <input type="hidden" name="funcion" value="insertar">
+         
             </form>
         </div>
     </div>

@@ -23,7 +23,7 @@
         }
         
         /*----------------------CONSULTAR-------------------------*/
-         //$sql va ser el select
+         //$sql va ser el select, los select
         function consultar($sql){
         //conexion,consulta
         $res=mysqli_query($this->con,$sql);
@@ -37,7 +37,9 @@
         return $data;
         }
         
+        
         /*---------------------INSERTAR-----------------------------*/
+        //esta funcion se encarga de los insert,delete update cambiar nombre a manipular o algo asi
         function insertar($sql){
             mysqli_query($this->con,$sql);
             //validar cuando se inserta,columnas afectadas
