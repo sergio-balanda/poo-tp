@@ -29,6 +29,7 @@
                     <th>rol</th>
                     <th>nombre</th>
                     <th>num_doc</th>
+                    <th>fecha</th>
                     <th>Operaciones</th>
                 </tr>
                 </thead>
@@ -37,6 +38,7 @@
                     <td><?php echo $tr['rol'];?></td>
                     <td><?php echo $tr['nombre'];?></td>
                     <td><?php echo $tr['num_doc'];?></td>
+                    <td><?php echo $tr['fecha_nacimiento'];?></td>
                     <td>
                         <a href="modificar.php?id=<?php echo $tr["idUsuario"]?>" class="btn btn-info">Modificar</a>
                         

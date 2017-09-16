@@ -16,7 +16,7 @@
     $doc=$_POST['num_doc'];
     $tipo=$_POST['tipo_doc'];
     $rol=$_POST['rol'];
-    //FALTA LA FECHA VER FORMATO PARA GUARDARLA
+    $fecha=$_POST['fecha_nacimiento'];
     $clave_md5=md5($pass);
         
     $cod=$_POST['cod'];    
@@ -38,8 +38,8 @@
     }
 
     else{
-       $sql="insert into usuario(nombre,password,num_doc,tipo_doc,rol) 
-       values('$nomb','$clave_md5','$doc','$tipo','$rol')"; 
+       $sql="insert into usuario(nombre,password,num_doc,tipo_doc,rol,fecha_nacimiento) 
+       values('$nomb','$clave_md5','$doc','$tipo','$rol','$fecha')"; 
     }  
 
     $obj->insertar($sql);
