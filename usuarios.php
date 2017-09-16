@@ -46,7 +46,7 @@
         </div>
     </div>
 </div>
-
+<a href="insertar.php" class="bnt btn-link">insertar</a>
 
 </body>
 </html>
