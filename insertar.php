@@ -36,9 +36,6 @@
                     <td><input type="text" name="tipo_doc"></td>
                 </tr>
                 
-                <tr class="danger">
-                    <td>nacimiento</td>
-                </tr>
                 
                 <tr class="warning">
                     <td>
@@ -51,9 +48,14 @@
                         <option value="mecanico">mecanico</option>
                       </select>
                       </td>
-                </div>
+                    </div>
                 </tr>
                 
+                <tr class="danger">
+                    <td>nacimiento</td>
+                    <td>
+                    <input type="text" value="2017-08-01" name="fecha_nacimiento"></td>
+                </tr>
                <tr>
                    <td colspan="3" class="text-center">
                    <input type="submit" value="insertar" class="btn btn-primary">
@@ -66,7 +68,6 @@
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

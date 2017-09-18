@@ -39,8 +39,7 @@
 
     else{
        $sql="insert into usuario(nombre,password,num_doc,tipo_doc,rol,fecha_nacimiento) 
-       values('$nomb','$clave_md5','$doc','$tipo','$rol','$fecha')"; 
-    }  
+       values('$nomb','$clave_md5','$doc','$tipo','$rol','$fecha')"    }  
 
     $obj->insertar($sql);
     header("Location:usuarios.php");
